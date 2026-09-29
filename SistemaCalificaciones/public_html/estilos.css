@@ -1,0 +1,155 @@
+/* Se aplica a todos los elementos de la página */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Estilo para el cuerpo de la página */
+body {
+    /* Define el tipo de letra principal de la página */
+    font-family: Arial, sans-serif;
+
+    /* Establece el color del fondo */
+    background-color: #f2f2f2;
+
+    /* Elimina el margen que el navegador agrega automáticamente */
+    margin: 0;
+
+    /* Elimina el espacio interior predeterminado */
+    padding: 0;
+}
+
+
+/* Estilo del contenedor principal */
+.contenedor {
+    /* Define el ancho del contenedor */
+    width: 450px;
+
+    /* Centra el contenedor horizontalmente y agrega espacio superior */
+    margin: 50px auto;
+
+    /* Establece el color blanco para el fondo */
+    background-color: white;
+
+    /* Agrega espacio interior alrededor del contenido */
+    padding: 30px;
+
+    /* Redondea las esquinas del contenedor */
+    border-radius: 10px;
+
+    /* Agrega una sombra alrededor del contenedor */
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Estilo para el título principal de la página */
+h1 {
+    /* Centra el texto del título */
+    text-align: center;
+
+    /* Agrega un espacio debajo del título */
+    margin-bottom: 10px;
+}
+
+
+/* Estilo para los párrafos */
+p {
+    /* Centra el texto */
+    text-align: center;
+
+    /* Define el color de letra de los párrafos */
+    color: #666;
+}
+
+
+/* Estilo para el contenedor de los campos del formulario */
+.formulario {
+    /* Muestra el estilo flex */
+    display: flex;
+
+    /* Coloca los elementos uno debajo de otro */
+    flex-direction: column;
+}
+
+
+/* Estilo para las etiquetas de los campos */
+label {
+    /* Agrega espacio en la parte superior de cada etiqueta */
+    margin-top: 15px;
+
+    /* Agrega un pequeño espacio debajo de la etiqueta */
+    margin-bottom: 5px;
+
+    /* Muestra el texto de la etiqueta en negritas */
+    font-weight: bold;
+}
+
+
+/* Estilo para los campos de texto y números */
+input {
+    /* Agrega espacio interior dentro del campo */
+    padding: 10px;
+
+    /* Define el color del borde */
+    border: 1px solid #ccc;
+
+    /* Redondea las esquinas de los campos */
+    border-radius: 5px;
+
+    /* Establece el tamaño de la letra */
+    font-size: 16px;
+}
+
+
+/* Estilo generales para todos los botones */
+button {
+    /* Agrega espacio superior antes de cada botón */
+    margin-top: 25px;
+
+    /* Agrega espacio interior al botón */
+    padding: 12px;
+
+    /* Define el color del botón */
+    background-color: #007bff;
+
+    /* Define el color blanco del texto */
+    color: white;
+
+    /* Elimina el borde predeterminado */
+    border: none;
+
+    /* Redondea las esquinas del botón */
+    border-radius: 5px;
+
+    /* Establece el tamaño de la letra del botón */
+    font-size: 16px;
+
+    /* Cambia el cursor a una mano cuando pasa sobre el botón */
+    cursor: pointer;
+}
+
+
+/* Estilo que se aplican cuando el cursor pasa sobre un botón */
+button:hover {
+    /* Cambia el color del botón */
+    background-color: #0056b3;
+}
+
+
+/* Estilo para el área donde se muestra el resultado */
+.resultado {
+    /* Agrega espacio superior entre el formulario y el resultado */
+    margin-top: 25px;
+
+    /* Agrega espacio interior alrededor del texto */
+    padding: 15px;
+
+    /* Centra el texto del resultado */
+    text-align: center;
+
+    /* Redondea las esquinas del área de resultado */
+    border-radius: 5px;
+
+    /* Define el tamaño de la letra del resultado */
+    font-size: 18px;
+}

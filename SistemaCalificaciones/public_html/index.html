@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <!-- Define el el idioma del texto en la página -->
+        <meta charset="UTF-8">
+
+        <!-- Permite que la página se adapte correctamente a dispositivos móviles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Define el título que aparecerá en la pestaña -->
+        <title>Sistema de Calificaciones</title>
+
+        <!-- Enlaza el archivo HTML con la hoja de estilos CSS -->
+        <link rel="stylesheet" href="estilos.css">
+
+    </head>
+
+    <body>
+
+        <!-- Contenedor principal de todo el contenido de la página -->
+        <div class="contenedor">
+
+            <!-- Muestra el título principal del sistema -->
+            <h1>Sistema de Calificaciones</h1>
+
+            <!-- Muestra una breve indicación para el usuario -->
+            <p>Captura las calificaciones del alumno</p>
+
+            <!-- Contiene todos los campos y botones del formulario -->
+            <div class="formulario">
+
+                <!-- Etiqueta que indica que el siguiente campo es para el nombre -->
+                <label for="nombre">Nombre del alumno:</label>
+
+                <!-- Campo de texto donde se captura el nombre del alumno -->
+                <input type="text" id="nombre" placeholder="Escribe el nombre">
+
+
+                <!-- Etiqueta que indica que el siguiente campo es para la edad -->
+                <label for="edad">Edad del alumno:</label>
+
+                <!-- Campo numérico donde se captura la edad del alumno -->
+                <input type="number" id="edad" placeholder="Escribe la edad">
+
+
+                <!-- Etiqueta que indica que el campo corresponde a la primera calificación -->
+                <label for="calificacion1">Calificación 1:</label>
+
+                <!-- Campo numérico para capturar la primera calificación -->
+                <!-- El valor permitido debe estar entre 0 y 10 -->
+                <input type="number" id="calificacion1" min="0" max="10">
+
+
+                <!-- Etiqueta que indica que el campo corresponde a la segunda calificación -->
+                <label for="calificacion2">Calificación 2:</label>
+
+                <!-- Campo numérico para capturar la segunda calificación -->
+                <!-- El valor permitido debe estar entre 0 y 10 -->
+                <input type="number" id="calificacion2" min="0" max="10">
+
+
+                <!-- Etiqueta que indica que el campo corresponde a la tercera calificación -->
+                <label for="calificacion3">Calificación 3:</label>
+
+                <!-- Campo numérico para capturar la tercera calificación -->
+                <!-- El valor permitido debe estar entre 0 y 10 -->
+                <input type="number" id="calificacion3" min="0" max="10">
+
+
+                <!-- Etiqueta que indica que el campo corresponde a la cuarta calificación -->
+                <label for="calificacion3">Calificación 4:</label>
+
+                <!-- Campo numérico para capturar la cuarta calificación -->
+                <!-- El valor permitido debe estar entre 0 y 10 -->
+                <input type="number" id="calificacion4" min="0" max="10">
+
+
+                <!-- Botón que ejecuta la función calcularPromedio() -->
+                <button onclick="calcularPromedio()">
+                    Calcular promedio
+                </button>
+
+                <!-- Botón que ejecuta la función limpiar() -->
+                <!-- El atributo type="button" evita que el botón envíe un formulario -->
+                <button type="button" onclick="limpiar()">
+                    Limpiar
+                </button>
+
+                <!-- Botón que ejecuta la función agregarAlumno() -->
+                <button type="button" onclick="agregarAlumno()">
+                    Agregar Alumno
+                </button>
+
+            </div>
+
+
+            <!-- Div donde se muestra el promedio y los mensajes del sistema -->
+            <div id="resultado" class="resultado">
+
+            </div>
+
+
+            <!-- Div donde se muestra la lista de alumnos registrados -->
+            <div id="listaAlumnos">
+
+            </div>
+
+        </div>
+
+
+        <!-- Enlaza el documento HTML con el archivo de JavaScript -->
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
